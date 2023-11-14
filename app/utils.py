@@ -2,7 +2,10 @@ import streamlit as st
 
 def setup_page_config():
     st.set_page_config(
-        page_title="Kanak Dahake", layout="wide", initial_sidebar_state="collapsed"
+        page_title="Kanak Dahake", 
+        page_icon="https://kanakjr.in/wp-content/uploads/2017/04/logokanakjr.png",
+        layout="wide", 
+        initial_sidebar_state="collapsed"
     )
     st.markdown(
         """<style>
