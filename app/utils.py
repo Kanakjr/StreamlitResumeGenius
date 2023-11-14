@@ -1,6 +1,6 @@
 import streamlit as st
 
-def display_resume(file_path):
+def setup_page_config():
     st.set_page_config(
         page_title="Kanak Dahake", layout="wide", initial_sidebar_state="collapsed"
     )
@@ -15,6 +15,7 @@ def display_resume(file_path):
         unsafe_allow_html=True,
     )
 
+def display_resume(file_path):
     header, sidebar, body = "", "", ""
     with open(file_path, "r") as file:
         content = file.read()
@@ -29,11 +30,6 @@ def display_resume(file_path):
         st.stop
 
     st.markdown(header, unsafe_allow_html=True)
-    # st.markdown('---', unsafe_allow_html=True)
     col1, col2 = st.columns([1.2, 3])
     col1.markdown(sidebar, unsafe_allow_html=True)
     col2.markdown(body, unsafe_allow_html=True)
-
-# # Example usage:
-# file_path = "resume_security.md"
-# display_resume(file_path)

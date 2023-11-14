@@ -1,4 +1,5 @@
-from utils import display_resume
+from utils import setup_page_config,display_resume
 
-file_path = "resume_security.md"
+file_path = "resume_md/security.md"
+setup_page_config()
 display_resume(file_path)
