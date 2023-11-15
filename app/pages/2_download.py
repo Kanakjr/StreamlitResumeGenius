@@ -18,4 +18,3 @@ files = list_files(dir_path)
 st.markdown("## Download Resume")
 selected_tab = st.radio('Select File:',files,horizontal=True)
 displayPDF(f'./resume_pdf/{selected_tab}')
-st
