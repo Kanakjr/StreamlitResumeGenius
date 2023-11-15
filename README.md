@@ -1,4 +1,5 @@
-# Project README
+# StreamlitResumeGenius: Markdown-Driven Resume Presentation Project
+[![Docker Build and Deploy](https://github.com/Kanakjr/Resume/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Kanakjr/Resume/actions/workflows/docker-image.yml)
 
 ## Project Overview
 
