@@ -3,6 +3,8 @@
 📞 [+91-8530916747](tel:8530916747) | 📧 ksdusa4@gmail.com |
 🌐 [Website](https://kanakjr.in) | 👔 [LinkedIn](https://www.linkedin.com/in/kanak-dahake) | 🐙 [GitHub](https://github.com/Kanakjr)
 
+**Summary:** Dedicated and innovative professional with a Master's degree in Cyber Security. Over 6 years of comprehensive experience in IT Security and Software Engineering, specializing in the intersection of AI, particularly Generative AI (Gen AI), and cybersecurity. Proven track record in delivering software solutions for complex problems and industry experience in product development. 
+
 ## Education
 
 **Georgia Institute of Technology**  
@@ -19,8 +21,8 @@ Jun 2013 - Mar 2017 | Amravati
 
 #### Programming
 
-- Over 5000 lines: Python, JavaScript, Node.js
-- Over 1000 lines: Shell, Powershell, GO, JAVA
+- Over 10K lines: Python, JavaScript, Node.js
+- Over 2K lines: Shell, Powershell, GO, JAVA
 
 #### Tech Stack
 
@@ -28,23 +30,21 @@ Jun 2013 - Mar 2017 | Amravati
 - GenAI & NLP, Machine & Deep Learning
 - Langchain (Chains & Agents), RAG
 - Streamlit (Frontend), VectorDB
-- CV, Neo4j, Blockchain
+- Computer Vision, Neo4j, Blockchain
+- DevOps: Docker, Git, Ansible
+- Models: Transformer (GPT-3, LLaMA, BERT), OpenCV, YOLOv5
 
-<!-- #### Tools
-
-- Wireshark, Snort, SPLUNK
-- ELK, Metasploit, Ghidra
-- MITRE ATT&CK Framework
-- Ansible, Git, Docker -->
+<!-- #### Models & Frameworks -->
 
 ## Certificates
 
 - Azure Cloud Developer (Microsoft)
 - AWS Certified Cloud Practitioner (AWS)
+- Generative AI with Large Language Models (Coursera)
 - Deep Learning Specialization (Coursera)
 - CompTIA Security+ (CompTIA)
 - Information Assurance Professional (DIAT/DRDO)
-- IT Security Specialist (LinkedIn Learning)
+<!-- - IT Security Specialist (LinkedIn Learning) -->
 
 <!-- ## Relevant Courses
 
@@ -75,22 +75,23 @@ Jun 2013 - Mar 2017 | Amravati
 #### PwC U.S. Advisory
 ##### **Senior Associate - Innovation Hub** | June 2022 – Present | Mumbai, IN
 - Led the development of InsightsGen, a Gen AI-driven accelerator, enabling streamlined data analysis with contextually relevant insights and visualizations using Natural Language, enhancing decision-making processes. This resulted in multiple client engagement wins for the firm.
-- Developed various chatbots, agents, and LLM chains for use cases such as DocQnA and retrieval-augmented generation. Filed 2 Patents for designed algorithms.
+- Developed various chatbots, agents, and LLM chains for use cases such as DocQnA and retrieval-augmented generation. 
+- Filed 2 Patents for designed algorithms.
 - Collaborated on ChatPWC, a project that reimagines how enterprises interact with their data, securely integrating with GenAI models to transform private data and documents into a strategic advantage.
 
 ##### **Associate - Innovation Hub** | Dec 2020 – June 2022 | Mumbai, IN
-- Implemented a Graph-based anomaly detection system for Azure IAM roles, resulting in a 20% reduction in unauthorized access incidents.
-- Spearheaded the development of a Federated Machine learning POC on a blockchain network, demonstrating the feasibility of secure and decentralized machine learning models
+- Developed a Graph-based anomaly detection system for Azure IAM roles, resulting in a 20% reduction in unauthorized access incidents.
+- Spearheaded the development of a Federated Machine learning POC on a blockchain network, demonstrating the feasibility of secure and decentralized machine learning models.
 - Designed and executed an NLU (Natural Language Understanding) Pipeline, streamlining information extraction from Clinical Trial documents and reducing manual processing time by 30%.
 - Developed a novel approach to validate public addresses of multiple blockchain networks using cryptography such as EDDSA and ECDSA.
 
 
 #### Digitate, TCS
 ##### **Technical Lead Cybersecurity** | Jan 2020 – Nov 2020 | Pune, IN
-- Led the implementation of Just-in-time access systems for IAM solutions using Python and MongoDB, improving access control and reducing unauthorized access by 35%.
-- Led cloud security controls & Secure DevOps processes with code, automation, and data using Python, Bash, REST & Ansible, improving the efficiency of the security operations by 20%.
+- Developed of Just-in-time access systems for IAM solutions using Python and MongoDB, improving access control and reducing unauthorized access by 35%.
+- Implemented cloud security controls & Secure DevOps processes with code, automation, and data using Python, Bash, REST & Ansible, improving the efficiency of the security operations by 20%.
 - Oversee security for SAAS delivery model, providing expert advice on secure architecture, design, and implementation.
-<!-- - Provided support in guiding business and technology partners on Cryptography and Data protection matters. -->
+- Provided support in guiding business and technology partners on Cryptography and Data protection matters.
 
 ##### **Security Specialist - SAAS Product** | Nov 2018 – Jan 2020 | Pune, IN
 - Developed a Phishing campaigns detection system using Neo4J graph database and algorithms like label propagation and PageRank, leading to a 20% improvement in identifying malicious campaigns.
@@ -111,7 +112,7 @@ Jun 2013 - Mar 2017 | Amravati
 
 ##### CryptoVulnerability - Responsible Vulnerability Reporting and Disclosure on Blockchain
 
-- Developed a Transparent, Privacy-focused, and Incentive-driven system for traditional vulnerability reporting and disclosure processes using blockchain technology (Hyperledger Fabric Framework). [Demo Video](https://youtu.be/TLWH58xnZPQ?t=403)
+- Developed a Transparent, Privacy-focused, and Incentive-driven system for traditional vulnerability reporting and disclosure processes using blockchain technology (Hyperledger Fabric Framework). [Demo Video](https://youtu.be/TLWH58xnZPQ?t=403) [Github Link](https://github.com/Kanakjr/VulnReporting)
 
 ##### IP Insight - Unsupervised Anomaly Detection for Suspicious IP Addresses
 
