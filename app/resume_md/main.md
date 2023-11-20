@@ -88,7 +88,7 @@ Jun 2013 - Mar 2017 | Amravati
 
 #### Digitate, TCS
 ##### **Technical Lead Cybersecurity** | Jan 2020 – Nov 2020 | Pune, IN
-- Developed of Just-in-time access systems for IAM solutions using Python and MongoDB, improving access control and reducing unauthorized access by 35%.
+- Developed Just-in-time access systems for IAM solutions using Python and MongoDB, improving access control and reducing unauthorized access by 35%.
 - Implemented cloud security controls & Secure DevOps processes with code, automation, and data using Python, Bash, REST & Ansible, improving the efficiency of the security operations by 20%.
 - Oversee security for SAAS delivery model, providing expert advice on secure architecture, design, and implementation.
 - Provided support in guiding business and technology partners on Cryptography and Data protection matters.
@@ -112,7 +112,7 @@ Jun 2013 - Mar 2017 | Amravati
 
 ##### CryptoVulnerability - Responsible Vulnerability Reporting and Disclosure on Blockchain
 
-- Developed a Transparent, Privacy-focused, and Incentive-driven system for traditional vulnerability reporting and disclosure processes using blockchain technology (Hyperledger Fabric Framework). [Demo Video](https://youtu.be/TLWH58xnZPQ?t=403) [Github Link](https://github.com/Kanakjr/VulnReporting)
+- Developed a Transparent, Privacy-focused, and Incentive-driven system for traditional vulnerability reporting and disclosure processes using blockchain technology (Hyperledger Fabric Framework). [Demo Video](https://youtu.be/TLWH58xnZPQ?t=403) , [Github Link](https://github.com/Kanakjr/VulnReporting)
 
 ##### IP Insight - Unsupervised Anomaly Detection for Suspicious IP Addresses
 
