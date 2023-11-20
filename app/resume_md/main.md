@@ -74,8 +74,8 @@ Jun 2013 - Mar 2017 | Amravati
 
 #### PwC U.S. Advisory
 ##### **Senior Associate - Innovation Hub** | June 2022 – Present | Mumbai, IN
-- Led the development of InsightsGen, a Gen AI-driven accelerator, enabling streamlined data analysis with contextually relevant insights and visualizations using Natural Language, enhancing decision-making processes. This resulted in multiple client engadgement wins for the firm.
-- Developed multiple Chatbot, Agents and LLM chains for different usecases like DocQnA, retrieval augmented generation etc. Filed for 2 Patents for the designed algorithms.
+- Led the development of InsightsGen, a Gen AI-driven accelerator, enabling streamlined data analysis with contextually relevant insights and visualizations using Natural Language, enhancing decision-making processes. This resulted in multiple client engagement wins for the firm.
+- Developed various chatbots, agents, and LLM chains for use cases such as DocQnA and retrieval-augmented generation. Filed 2 Patents for designed algorithms.
 - Collaborated on ChatPWC, a project that reimagines how enterprises interact with their data, securely integrating with GenAI models to transform private data and documents into a strategic advantage.
 
 ##### **Associate - Innovation Hub** | Dec 2020 – June 2022 | Mumbai, IN
@@ -89,7 +89,7 @@ Jun 2013 - Mar 2017 | Amravati
 ##### **Technical Lead Cybersecurity** | Jan 2020 – Nov 2020 | Pune, IN
 - Led the implementation of Just-in-time access systems for IAM solutions using Python and MongoDB, improving access control and reducing unauthorized access by 35%.
 - Led cloud security controls & Secure DevOps processes with code, automation, and data using Python, Bash, REST & Ansible, improving the efficiency of the security operations by 20%.
-- Oversaw security for SAAS delivery model, providing expert advice on secure architecture, design, and implementation.
+- Oversee security for SAAS delivery model, providing expert advice on secure architecture, design, and implementation.
 <!-- - Provided support in guiding business and technology partners on Cryptography and Data protection matters. -->
 
 ##### **Security Specialist - SAAS Product** | Nov 2018 – Jan 2020 | Pune, IN
@@ -106,10 +106,10 @@ Jun 2013 - Mar 2017 | Amravati
 ## Projects
 
 ##### NewsGenius - GenAI based News Article Generation
-- A GenAI driven app for designed to assist news media publishers and content. It streamlines the process of content creation by leveraging AI capabilities to assist users in tasks such as social media posting, article writing, image generation, summarization, and bullet point creation. It provides a comprehensive set of tools for enhancing the efficiency of news article production. [Demo Video](https://youtu.be/fmH5PAESSxo)
+- A GenAI-driven app designed to assist news media publishers by streamlining content creation by leveraging AI capabilities to assist users in tasks such as social media posting, article writing, image generation, summarization, and bullet point creation. It provides a comprehensive set of tools for enhancing the efficiency of news article production. [Demo Video](https://youtu.be/fmH5PAESSxo)
 
 
-##### CyptoVulnerability - Responsible Vulnerability Reporting and Disclosure on Blockchain
+##### CryptoVulnerability - Responsible Vulnerability Reporting and Disclosure on Blockchain
 
 - Developed a Transparent, Privacy-focused, and Incentive-driven system for traditional vulnerability reporting and disclosure processes using blockchain technology (Hyperledger Fabric Framework). [Demo Video](https://youtu.be/TLWH58xnZPQ?t=403)
 
