@@ -31,12 +31,10 @@ Jun 2013 - Mar 2017 | Amravati
 - Langchain (Chains & Agents), RAG
 - Streamlit (Frontend), VectorDB
 - Computer Vision, Neo4j, Blockchain
+- DevOps: Docker, Git, Ansible
+- Models: Transformer (GPT-3, LLaMA, BERT), OpenCV, YOLOv5
 
-#### Models & Frameworks
-
-- Ansible, Git, Docker
-- Transformer models (GPT-3, LLaMA, BERT)
-- OpenCV, YOLOv5
+<!-- #### Models & Frameworks -->
 
 ## Certificates
 
@@ -46,7 +44,7 @@ Jun 2013 - Mar 2017 | Amravati
 - Deep Learning Specialization (Coursera)
 - CompTIA Security+ (CompTIA)
 - Information Assurance Professional (DIAT/DRDO)
-- IT Security Specialist (LinkedIn Learning)
+<!-- - IT Security Specialist (LinkedIn Learning) -->
 
 <!-- ## Relevant Courses
 

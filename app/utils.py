@@ -33,6 +33,6 @@ def display_resume(file_path):
         st.stop
 
     st.markdown(header, unsafe_allow_html=True)
-    col1, col2 = st.columns([1.2, 3])
+    col1, col2 = st.columns([1.3, 3])
     col1.markdown(sidebar, unsafe_allow_html=True)
     col2.markdown(body, unsafe_allow_html=True)
