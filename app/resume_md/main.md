@@ -30,9 +30,9 @@ Jun 2013 - Mar 2017 | Amravati
 - GenAI & NLP, Machine & Deep Learning
 - Langchain (Chains & Agents), RAG
 - Streamlit (Frontend), VectorDB
-- Computer Vision, Neo4j, Blockchain
+- Neo4j, Blockchain
 - DevOps: Docker, Git, Ansible
-- Models: Transformer (GPT-3, LLaMA, BERT), OpenCV, YOLOv5
+- Models: Transformer (GPT-3/4, LLaMA, GEMMA), OpenCV, YOLOv5
 
 <!-- #### Models & Frameworks -->
 
@@ -74,10 +74,10 @@ Jun 2013 - Mar 2017 | Amravati
 
 #### PwC U.S. Advisory
 ##### **Senior Associate - Innovation Hub** | June 2022 – Present | Mumbai, IN
-- Led the development of InsightsGen, a Gen AI-driven accelerator, enabling streamlined data analysis with contextually relevant insights and visualizations using Natural Language, enhancing decision-making processes. This resulted in multiple client engagement wins for the firm.
-- Developed various chatbots, agents, and LLM chains for use cases such as DocQnA and retrieval-augmented generation. 
+- Spearheaded multiple production GenAI Enterprise application - including Chat Assited search (retrieval-augmented generation), Chat Insights (Statistics backed Agent on Structured Data), Supervised Content Creation and other SME Chatbots. Leveraging Azure Infrastructure like Cognitive Search, CosmoDB, App insights etc. 
+- Led the development of InsightsGen, a GenAI accelerator, enabling data analysis with contextually relevant insights and visualizations using NLP, enhancing decision-making. This resulted in multiple client engagement wins for the firm.
 - Filed 2 Patents for designed algorithms.
-- Collaborated on ChatPWC, a project that reimagines how enterprises interact with their data, securely integrating with GenAI models to transform private data and documents into a strategic advantage.
+- Collaborated on ChatPWC, a project that reimagines how enterprises interact with their data, integrating GenAI models to transform private data into a strategic advantage.
 
 ##### **Associate - Innovation Hub** | Dec 2020 – June 2022 | Mumbai, IN
 - Developed a Graph-based anomaly detection system for Azure IAM roles, resulting in a 20% reduction in unauthorized access incidents.
@@ -89,7 +89,7 @@ Jun 2013 - Mar 2017 | Amravati
 #### Digitate, TCS
 ##### **Technical Lead Cybersecurity** | Jan 2020 – Nov 2020 | Pune, IN
 - Developed Just-in-time access systems for IAM solutions using Python and MongoDB, improving access control and reducing unauthorized access by 35%.
-- Implemented cloud security controls & Secure DevOps processes with code, automation, and data using Python, Bash, REST & Ansible, improving the efficiency of the security operations by 20%.
+- Implemented cloud security controls & Secure DevOps processes with code, automation, and data, improving the efficiency of the security operations by 20%.
 - Oversee security for SAAS delivery model, providing expert advice on secure architecture, design, and implementation.
 - Provided support in guiding business and technology partners on Cryptography and Data protection matters.
 
@@ -107,7 +107,7 @@ Jun 2013 - Mar 2017 | Amravati
 ## Projects
 
 ##### NewsGenius - GenAI based News Article Generation
-- A GenAI-driven app designed to assist news media publishers by streamlining content creation by leveraging AI capabilities to assist users in tasks such as social media posting, article writing, image generation, summarization, and bullet point creation. It provides a comprehensive set of tools for enhancing the efficiency of news article production. [Demo Video](https://youtu.be/fmH5PAESSxo)
+- A GenAI-driven app designed for news media publishers by streamlining content creation to assist in tasks such as social media posting, article writing, image generation, summarization, and bullet point creation. It provides a comprehensive set of tools for enhancing the efficiency of news article production. [Demo Video](https://youtu.be/fmH5PAESSxo)
 
 
 ##### CryptoVulnerability - Responsible Vulnerability Reporting and Disclosure on Blockchain
