@@ -32,7 +32,8 @@ Jun 2013 - Mar 2017 | Amravati
 - Streamlit (Frontend), VectorDB
 - Neo4j, Blockchain
 - DevOps: Docker, Git, Ansible
-- Models: Transformer (GPT-3/4, LLaMA, GEMMA), OpenCV, YOLOv5
+- Models: Transformer (GPT-3/4, LLaMA, GEMMA), 
+- OpenCV, YOLOv5
 
 <!-- #### Models & Frameworks -->
 
