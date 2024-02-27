@@ -1,7 +1,7 @@
 # Kanak Dahake, MS
 
 📞 [+91-8530916747](tel:8530916747) | 📧 ksdusa4@gmail.com |
-🌐 [Website](https://kanakjr.in) | 👔 [LinkedIn](https://www.linkedin.com/in/kanak-dahake) | 🐙 [GitHub](https://github.com/Kanakjr)
+🌐 [Website](https://kanakjr.in) | 👔 [LinkedIn](https://www.linkedin.com/in/kanak-dahake) | 🐙 [GitHub](https://github.com/Kanakjr) | 📝 [Medium](https://kanakjr.medium.com/)
 
 **Summary:** Dedicated and innovative professional with a Master's degree in Cyber Security. Over 6 years of comprehensive experience in IT Security and Software Engineering, specializing in the intersection of AI, particularly Generative AI (Gen AI), and cybersecurity. Proven track record in delivering software solutions for complex problems and industry experience in product development. 
 
