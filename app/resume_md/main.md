@@ -100,7 +100,7 @@ Jun 2013 - Mar 2017 | Amravati
 - Architected, designed, and delivered Encryption, Key Management, and PKI solutions.
 - Security data analysis, including UBA and providing static and dynamic alerting.
 
-##### **Product Developer - Cognitive Threat Manager** | Nov 2018 – Jan 2020 | Pune, IN
+##### **Product Developer - Cognitive Threat Manager** | Jun 2017 – Nov 2018 | Pune, IN
 - Trained and deployed Deep learning-based Phishing URL and DGA domain detection models, reducing successful phishing attacks by 25%.
 - Filed for multiple Patents for the designed algorithms.
 - Developed ML services through a Python-based FLASK REST API system.
