@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #adc2a9;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-size: 32px;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.summary {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-column {
+    width: 30%;
+}
+
+.right-column {
+    width: 66%;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 1px;
+    margin-bottom: 5px;
+}
+
+.education-item, .experience-item, .project-item {
+    margin-bottom: 10px;
+}
+
+.education-item h3, .experience-item h3, .project-item h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.education-item p, .experience-item h4, .project-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0px;
+}
+
+strong {
+    font-weight: bold;
+}

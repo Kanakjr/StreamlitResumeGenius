@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  # kanakresume:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   container_name: kanakresume
+  #   ports:
+  #     - "8502:8502"
+  #   volumes:
+  #     - ./app:/app
+  #   restart: unless-stopped
+
+  kanakresumestatic:
+    image: nginx:alpine
+    container_name: kanakresume-static-site
+    ports:
+      - "8502:80"
+    volumes:
+      - ./app/static:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf  # Custom NGINX config
+    restart: unless-stopped

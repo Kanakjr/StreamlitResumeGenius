@@ -1,3 +1,7 @@
-docker build -f "Dockerfile" -t kanakresume:latest "."
-docker stop kanakresume
-docker run --rm -d -p 8502:8502/tcp --name kanakresume kanakresume
+#!/bin/bash
+
+# Pull the latest changes from the Git repository
+git pull origin main
+
+# Build the Docker image and start the container
+docker-compose up --build -d
