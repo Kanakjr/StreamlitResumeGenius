@@ -17,10 +17,5 @@ jobs:
         password: ${{ secrets.SERVER_SSH_PASSWORD }}
         port: 22
         script: |
-          cd /home/ubuntu/Workspace/github/Resume
-          git pull origin main
-          docker system prune -f
-          docker build -f "Dockerfile" -t kanakresumegit:latest .
-          docker stop kanakresumegit || true
-          sleep 5
-          docker run --rm -d -p 8502:8502/tcp --name kanakresumegit kanakresumegit
+          cd ${{ secrets.RUN_SCRIPT_PATH }}
+          ./rundocker.sh
