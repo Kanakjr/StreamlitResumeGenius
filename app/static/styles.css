@@ -13,10 +13,10 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1300px;
     margin: auto;
     background: white;
-    padding: 20px;
+    padding: 35px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -62,7 +62,7 @@ h1 {
 }
 
 .right-column {
-    width: 66%;
+    width: 67%;
 }
 
 h2 {
@@ -72,7 +72,7 @@ h2 {
 }
 
 .education-item, .experience-item, .project-item {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .education-item h3, .experience-item h3, .project-item h4 {
@@ -96,4 +96,19 @@ ul li {
 
 strong {
     font-weight: bold;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .left-column {
+        width: 100%; /* Full width for left column */
+    }
+
+    .right-column {
+        width: 100%; /* Full width for right column */
+    }
 }
