@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Powered Database Insight Extraction</title>
+    <title>AI-Powered Database Insight Extraction Explained</title>
+    
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -13,62 +14,121 @@
               fontFamily: {
                 sans: ['Inter', 'sans-serif'], // Use Inter font
               },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-out forwards',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: 0 },
+                  '100%': { opacity: 1 },
+                }
+              }
             }
           }
         }
       </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script> 
+
     <style type="text/tailwindcss">
-        /* Add any custom CSS overrides here if needed */
-        /* Tailwind handles most styling via classes */
         body {
-            @apply font-sans bg-gray-50 text-gray-800;
+            @apply font-sans bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 text-gray-700;
         }
         h1, h2, h3 {
             @apply font-semibold text-gray-900;
         }
+        h1 {
+             @apply text-3xl md:text-4xl font-bold text-indigo-700 mb-3;
+        }
+        h2 {
+            @apply text-2xl mt-8 mb-4 border-b-2 border-indigo-200 pb-2 flex items-center gap-2;
+        }
+        h3 {
+            @apply text-lg font-semibold mt-4 mb-2 text-blue-700;
+        }
         li {
-             @apply mb-2; /* Add space below list items */
+             @apply mb-2 pl-4 relative; /* Add space below list items and prepare for custom bullets */
+        }
+         /* Custom bullets for lists */
+        ol > li::before {
+            content: counter(list-item) ".";
+            @apply absolute left-0 font-bold text-blue-600;
+        }
+        ul > li::before {
+            content: "•";
+            @apply absolute left-0 font-bold text-purple-600 text-xl leading-tight;
+             top: 2px; /* Adjust vertical alignment */
         }
         code {
-            @apply bg-gray-200 text-sm px-1 py-0.5 rounded-md font-mono text-red-700; /* Style code elements */
+            @apply bg-indigo-100 text-indigo-800 text-sm px-1.5 py-0.5 rounded-md font-mono border border-indigo-200;
         }
         strong, em {
-             @apply font-semibold text-blue-700; /* Highlight emphasized text */
+             @apply font-semibold text-purple-700; /* Highlight emphasized text */
         }
         ol {
-            @apply list-decimal list-inside space-y-2 mb-4; /* Style ordered lists */
+            @apply list-none mb-4 ml-2; /* Remove default list style */
+            counter-reset: list-item;
         }
         ul {
-             @apply list-disc list-inside space-y-1 mb-3 pl-4; /* Style unordered lists */
+             @apply list-none mb-3 ml-2; /* Remove default list style */
         }
+        article {
+             @apply transition-all duration-300 ease-in-out;
+        }
+        .icon {
+            @apply inline-block w-5 h-5 stroke-current text-indigo-600;
+        }
+
         /* SVG Styles */
-        .process-box { fill: #e0f2fe; stroke: #0ea5e9; stroke-width: 1.5; rx: 8; ry: 8; }
-        .data-box { fill: #fef9c3; stroke: #facc15; stroke-width: 1.5; rx: 8; ry: 8; }
-        .input-output { fill: #dcfce7; stroke: #22c55e; stroke-width: 1.5; rx: 8; ry: 8; }
-        .ai-box { fill: #f3e8ff; stroke: #a855f7; stroke-width: 1.5; rx: 8; ry: 8; }
-        .arrow-line { stroke: #6b7280; stroke-width: 1.5; marker-end: url(#arrowhead); fill: none; }
+        .process-box { fill: #e0f2fe; stroke: #0ea5e9; stroke-width: 1.5; rx: 8; ry: 8; transition: fill 0.2s ease-in-out; }
+        .process-box:hover { fill: #bae6fd; }
+        .data-box { fill: #fef9c3; stroke: #facc15; stroke-width: 1.5; rx: 8; ry: 8; transition: fill 0.2s ease-in-out; }
+        .data-box:hover { fill: #fef08a; }
+        .input-output { fill: #dcfce7; stroke: #22c55e; stroke-width: 1.5; rx: 8; ry: 8; transition: fill 0.2s ease-in-out; }
+        .input-output:hover { fill: #bbf7d0; }
+        .ai-box { fill: #f3e8ff; stroke: #a855f7; stroke-width: 1.5; rx: 8; ry: 8; transition: fill 0.2s ease-in-out; }
+        .ai-box:hover { fill: #e9d5ff; }
+        .arrow-line { stroke: #6b7280; stroke-width: 2; marker-end: url(#arrowhead); fill: none; }
         .arrow-head { fill: #6b7280; }
-        .label-text { font-family: 'Inter', sans-serif; font-size: 11px; fill: #1f2937; text-anchor: middle; }
-        .optional-text { font-family: 'Inter', sans-serif; font-size: 9px; fill: #6b7280; text-anchor: middle; font-style: italic; }
+        .label-text { font-family: 'Inter', sans-serif; font-size: 11px; fill: #1f2937; text-anchor: middle; pointer-events: none; } /* Prevent text selection */
+        .optional-text { font-family: 'Inter', sans-serif; font-size: 9px; fill: #6b7280; text-anchor: middle; font-style: italic; pointer-events: none; }
     </style>
 </head>
 <body class="p-4 md:p-8">
 
     
-    <article class="max-w-4xl mx-auto bg-white p-6 md:p-10 rounded-lg shadow-md">
+    <article class="max-w-4xl mx-auto bg-white p-6 md:p-10 rounded-lg shadow-xl animate-fade-in">
 
         
-        <header class="mb-8 border-b border-gray-300 pb-4">
-            <h1 class="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
+        <header class="mb-8 border-b border-indigo-200 pb-4">
+            <h1 class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database-zap w-8 h-8 text-indigo-600"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 15 21.84"/><path d="M21 5V8"/><path d="M3 12A9 3 0 0 0 14.59 14.87"/><path d="M21 12L18 17H22L19 22"/><path d="M12 18.16A9 3 0 0 1 3 19"/></svg>
                 Unlocking Database Secrets: AI-Powered Insight Extraction for Everyone
             </h1>
-            <p class="text-gray-600 text-sm">
+            <p class="text-gray-600 text-sm ml-1 mt-1">
                 Exploring Patent US 12,254,015 B1
             </p>
         </header>
 
         
-        <section class="mb-6">
+        <section class="mb-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+             <h3 class="text-xl font-semibold mb-2 text-blue-800 flex items-center gap-2">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-5 h-5"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                 Key Takeaways
+             </h3>
+             <ul class="text-gray-700">
+                 <li>Uses Generative AI to understand natural language queries about relational databases.</li>
+                 <li>Intelligently selects relevant data subsets, overcoming AI token limits.</li>
+                 <li>Employs techniques like denormalization, correlation analysis, and data aggregation.</li>
+                 <li>Generates both textual insights and data visualizations automatically.</li>
+                 <li>Makes complex data analysis accessible to non-technical users.</li>
+             </ul>
+        </section>
+
+        
+        <section class="mb-8">
             <p class="mb-4 text-lg leading-relaxed">
                 Relational databases are treasure troves of information, but extracting meaningful insights often requires deep technical expertise in statistics and database languages. Manual analysis or configuring purpose-built models can be complex, inflexible, and time-consuming. What if we could simply ask questions in natural language and get back insightful analysis and visualizations?
             </p>
@@ -78,8 +138,9 @@
         </section>
 
         
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-3 border-b border-gray-200 pb-2 text-gray-800">
+        <section class="mb-8">
+             <h2 class="text-2xl">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-puzzle w-6 h-6"><path d="M19.439 7.852c.043.132.061.27.061.408v3.48c0 1.46-1.19 2.65-2.65 2.65H16.5v1.43c0 .833-.343 1.599-.899 2.121l-1.175 1.101c-.166.156-.41.156-.576 0l-1.175-1.101A2.65 2.65 0 0 1 12 15.839V14.4h-.299a2.65 2.65 0 0 1-2.65-2.65v-3.48c0-.138.018-.276.061-.408C9.154 7.78 9 7.646 9 7.5v-1a2.5 2.5 0 0 1 2.5-2.5h1A2.5 2.5 0 0 1 15 6.5v1c0 .146-.154.28-.211.352z"/><path d="M6.293 6.293c.166-.156.343-.29.576-.29h1.175c.833 0 1.599.343 2.121.899l1.101 1.175c.156.166.156.41 0 .576l-1.101 1.175A2.65 2.65 0 0 1 9.27 10.66H8.17c-.833 0-1.599-.343-2.121-.899L4.948 8.585c-.156-.166-.156-.41 0-.576l1.101-1.175c.16-.16.28-.246.444-.343z"/></svg>
                 The Challenge: Bridging Databases and AI
             </h2>
             <p class="mb-4 leading-relaxed">
@@ -88,17 +149,18 @@
         </section>
 
         
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-4 border-b border-gray-200 pb-2 text-gray-800">
+        <section class="mb-8">
+            <h2 class="text-2xl">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-workflow w-6 h-6"><rect width="8" height="8" x="3" y="3" rx="2"/><rect width="8" height="8" x="13" y="13" rx="2"/><path d="M11 11.5H13"/><path d="M11 3.5v5"/><path d="M13 11.5V13"/></svg>
                 The Patented Solution: A Multi-Step AI Approach
             </h2>
-            <p class="mb-4 leading-relaxed">
+            <p class="mb-6 leading-relaxed">
                 The core idea is a system that intelligently uses a Generative AI model in multiple stages, combined with smart data processing techniques. Here's a visual overview of the workflow:
             </p>
 
             
             
-            <div class="my-6 flex justify-center overflow-x-auto">
+            <div class="my-6 flex justify-center overflow-x-auto bg-slate-50 p-4 rounded-md border border-slate-200">
                 <svg width="800" height="750" viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
@@ -208,6 +270,8 @@
                     <line x1="525" y1="570" x2="525" y2="595" class="arrow-line" /> 
                     <line x1="525" y1="640" x2="525" y2="665" class="arrow-line" /> 
                     <line x1="600" y1="695" x2="645" y2="695" class="arrow-line" /> 
+                    
+                    
                     <polyline points="200,385 225,385 225,465 245,465" class="arrow-line" /> 
                     
                     
@@ -223,38 +287,51 @@
                 </svg>
             </div>
 
-            <p class="mt-6 mb-4 leading-relaxed">
-                Here's a breakdown of the process outlined in the patent:
-            </p>
-            <ol class="leading-relaxed text-gray-700">
-                <li><strong>Receive Data & Generate Schema:</strong> The system takes relational database data as input. It then automatically generates schema information (table names, column names, data types, etc.) and converts it into a text string format the AI can understand.</li>
-                <li><strong>Understand the User Query:</strong> The system receives a user's query in natural language (e.g., "What caused quarterly sales to increase?"). Dynamic prompting techniques may enhance the query, adding relevant terms (like <code>revenue</code>, <code>trends</code>, <code>correlations</code>) to improve the AI's understanding and search.</li>
-                <li><strong>First AI Pass - Identify Relevant Data:</strong> A first prompt, combining the user query and the database schema data, is sent to the Generative AI model. The AI's role here isn't to answer the query directly, but to identify a <em>first subset</em> of the database data – the primary tables and columns most relevant to the user's question.</li>
-                <li><strong>Data Processing & Reduction (Handling Token Limits):</strong> This is a crucial step to overcome AI token limitations.
-                    <ul class="mt-2">
-                        <li><strong>(Optional) Denormalization:</strong> The system might first denormalize the relevant tables (combine related tables) to consolidate data, potentially using techniques like Depth-First Search (<code>DFS</code>) on adjacency matrices representing table relationships.</li>
-                        <li><strong>(Optional) Correlation Analysis:</strong> To broaden the analysis, the system can generate a correlation matrix for the data. Using the primary columns identified by the AI, it finds highly correlated <em>secondary columns</em> (e.g., using Chi-Square, Pearson, or ANOVA tests) that might also be relevant to the query, even if not explicitly mentioned.</li>
-                        <li><strong>Content Extraction & Compression:</strong> The actual data content for the identified primary (and potentially secondary) columns is retrieved. To fit within token limits, this data undergoes modification:
-                            <ul class="mt-1">
-                                <li><em>Filtering:</em> Removing less relevant data, perhaps based on high cardinality (many unique values) in categorical columns.</li>
-                                <li><em>Aggregation/Summarization:</em> Reducing data size while preserving trends. This involves sorting columns (e.g., by cardinality), grouping data into "chunks" (potentially using a sliding window technique), and applying aggregation functions (like mean, min, max, selected by AI based on schema) to numerical data within these chunks. This results in a <em>concise representation</em> of the relevant data.</li>
-                            </ul>
-                        </li>
-                    </ul>
+            <h3 class="text-xl font-semibold mt-6 mb-3 text-gray-800">Detailed Steps:</h3>
+            <ol class="leading-relaxed text-gray-700 space-y-3">
+                <li>
+                    <span class="font-semibold text-indigo-700">Receive Data & Generate Schema:</span> The system ingests relational database data. It then analyzes the structure (tables, columns, types) and creates a simplified text description (schema) for the AI.
+                    <div class="text-sm text-gray-500 pl-4 mt-1">Input: Raw Database Data</div>
+                    <div class="text-sm text-gray-500 pl-4">Output: Schema in Text Format</div>
                 </li>
-                <li><strong>Second AI Pass - Generate Insights:</strong> A second prompt is sent to the <em>same</em> (or another) Generative AI model. This prompt includes the user query and the <em>concise representation</em> of the relevant data subset generated in the previous step.</li>
-                <li><strong>Receive Output:</strong> The AI model processes this second prompt and generates the final output: insight data. This insight data can be:
-                    <ul class="mt-2">
-                        <li><em>Textual:</em> Explanations, summaries, identified patterns, and correlations responsive to the user query. For instance, identifying correlations between price increases and sales growth, or seasonal sales patterns.</li>
-                        <li><em>Visual:</em> The system can also generate data for visualizations (like bar charts, line graphs) or even the visualizations themselves, either directly from the AI or by instructing a separate visualization engine.</li>
+                <li>
+                    <span class="font-semibold text-indigo-700">Understand the User Query:</span> A user asks a question in plain English (e.g., "Show sales trends by region"). The system might use <em>Dynamic Prompting</em> to refine this query, adding context or keywords like "revenue" or "visualize" before sending it to the AI.
+                    <div class="text-sm text-gray-500 pl-4 mt-1">Input: Natural Language Query</div>
+                    <div class="text-sm text-gray-500 pl-4">Output: Enhanced Query for AI</div>
+                </li>
+                 <li>
+                    <span class="font-semibold text-indigo-700">First AI Pass - Identify Relevant Data:</span> The enhanced query and the text schema are sent to a Generative AI. The AI identifies the most relevant tables and columns (the <em>first subset</em> or <em>primary columns</em>) needed to answer the query.
+                    <div class="text-sm text-gray-500 pl-4 mt-1">Input: Enhanced Query, Text Schema</div>
+                    <div class="text-sm text-gray-500 pl-4">Output: List of Primary Columns</div>
+                </li>
+                <li>
+                    <span class="font-semibold text-indigo-700">Data Processing & Reduction:</span> This stage prepares the data for the AI and manages size constraints.
+                    <ul class="mt-2 text-gray-600">
+                        <li><em>(Optional) Denormalization:</em> Combines related tables for easier analysis.</li>
+                        <li><em>(Optional) Correlation Analysis:</em> Finds <em>secondary columns</em> strongly related to the primary ones, adding potentially relevant context.</li>
+                        <li><em>Content Extraction:</em> Retrieves the actual data values for all identified relevant columns.</li>
+                        <li><em>Compression:</em> Filters out less useful data (e.g., high-cardinality text) and aggregates numerical data (e.g., using averages within sorted 'chunks') to create a <em>concise representation</em> that fits within AI token limits while preserving key trends.</li>
                     </ul>
+                     <div class="text-sm text-gray-500 pl-4 mt-1">Input: Primary Columns, (Optional) Correlation Matrix, Database Content</div>
+                     <div class="text-sm text-gray-500 pl-4">Output: Concise Data Representation</div>
+                </li>
+                <li>
+                    <span class="font-semibold text-indigo-700">Second AI Pass - Generate Insights:</span> The user's query and the compact, concise data representation are sent to the Generative AI again.
+                    <div class="text-sm text-gray-500 pl-4 mt-1">Input: Enhanced Query, Concise Data</div>
+                    <div class="text-sm text-gray-500 pl-4">Output: Insight Data (Text/Visual Specs)</div>
+                </li>
+                <li>
+                    <span class="font-semibold text-indigo-700">Receive Output:</span> The AI returns the generated insights, which can be text summaries, explanations of patterns, or specifications for creating visualizations (like charts and graphs), potentially generated by the AI itself or a separate visualization tool.
+                    <div class="text-sm text-gray-500 pl-4 mt-1">Input: Insight Data from AI</div>
+                    <div class="text-sm text-gray-500 pl-4">Output: User-facing Text & Visualizations</div>
                 </li>
             </ol>
         </section>
 
         
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-3 border-b border-gray-200 pb-2 text-gray-800">
+        <section class="mb-8">
+            <h2 class="text-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-6 h-6"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
                 Why This Matters
             </h2>
             <p class="mb-4 leading-relaxed">
@@ -270,8 +347,9 @@
         </section>
 
         
-        <section>
-            <h2 class="text-2xl font-semibold mb-3 border-b border-gray-200 pb-2 text-gray-800">
+        <section class="mt-10 pt-6 border-t border-indigo-200">
+            <h2 class="text-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-6 h-6"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.3.09-3.1a2.4 2.4 0 0 0-3.48-3.5c-.79.71-2.26 1.8-3.1 2.5"/><path d="m22 2-7 20-4-9-9-4Z"/><path d="M9 15V9"/><path d="M15 9h-6"/></svg>
                 Conclusion
             </h2>
             <p class="leading-relaxed">
